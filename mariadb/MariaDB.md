@@ -77,3 +77,5 @@ DROP USER [사용자]@[서버];
 [[MariaDB] 도커 컴포즈로 MariaDB 사용하기](https://blogingming.tistory.com/entry/MariaDB-%EB%8F%84%EC%BB%A4-%EC%BB%B4%ED%8F%AC%EC%A6%88%EB%A1%9C-MariaDB-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 [MariaDB 데이터베이스 생성, 계정생성, 권한 주기](https://wlsufld.tistory.com/40)
+
+[[MySQL] MariaDB root 비밀번호 변경(MariaDB 10.4 이상)](https://devshin93.tistory.com/65)
