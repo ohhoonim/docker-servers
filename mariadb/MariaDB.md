@@ -49,7 +49,7 @@ WHERE user = 'root';
 UPDATE user SET plugin='mysql_native_password'
 WHERE user='root';
 -- 10.4 이상은 아래 명령어로 실행
-set password = password('wngudehs');
+set password = password('변경할비번');
 -- 새로고침
 FLUSH PRIVILEGES;
 
