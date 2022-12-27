@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  mariadb:
+    image: mariadb
+    container_name: mariadb
+    ports:
+        - 3306:3306
+    restart: always
+    volumes:
+        - mariadb_datas:/var/lib/mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: 12345678 
+      
+volumes:
+    mariadb_datas:
