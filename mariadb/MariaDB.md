@@ -1,8 +1,14 @@
 # MariaDB
 
+## Docker 설치
+
+[docker docs](https://docs.docker.com)
+
 ## VSCode 확장 설치
 
-[Database Client - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2)
+[Database Client](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2)
+
+[Dokcer](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
 ## 도커로 MariaDB 서버 구축
 
@@ -27,7 +33,7 @@ volumes:
     mariadb:
 ```
 
-## 사용자 생성
+## 데이터베이스, 사용자 생성
 
 ```sql
 -- 데이터 베이스 확인
