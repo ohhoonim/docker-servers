@@ -3,10 +3,10 @@
 ## docker-componse.yml
 
 ```yaml
-version: '3.8'
+version: '3.7'
 services:
   mongodb:
-    image: mongo
+    image: mongo:4.4
     container_name: mongodb
     restart: always
     ports:
@@ -16,10 +16,14 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=1234 
-      - MONGO_INITDB_DATABASE=testdb
 volumes:
   mongodb_datas:
 ```
+
+<aside>
+💡 mongodb 5 버전이상은 ARMv8.2-A이상만 지원함.
+
+</aside>
 
 ## Collection 생성/조회
 
@@ -43,6 +47,4 @@ db.book.deleteOne({name:"hello docker"})
 
 ## 참고문헌
 
-[Docker - 도커로 MongoDB 컨테이너 설치하는 방법을 알아보자](https://7942yongdae.tistory.com/131)
-
-[몽고디비(MongoDB) docker-compose 설치 및 데이터 CRUD 예제](https://youngwonhan-family.tistory.com/entry/Docker-mongodb-docker-compose-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-CRUD-%EC%98%88%EC%A0%9C)
+[도커(Docker)로 MongoDB 서버 구축하기](https://wooiljeong.github.io/server/docker-mongo/)
